@@ -1,73 +1,63 @@
-# Welcome to your Lovable project
+Responsive College Information Web App
 
-## Project info
+A fully responsive web application built to showcase college departments, notices, and events, created using HTML, CSS, JavaScript, Bootstrap, and React. This project demonstrates modern frontend development skills, responsive design, and component-based architecture.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Features
 
-## How can I edit this code?
+Fully responsive design for desktop, tablet, and mobile
 
-There are several ways of editing your application.
+Sections for:
 
-**Use Lovable**
+College departments
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Latest notices
 
-Changes made via Lovable will be committed automatically to this repo.
+Upcoming events
 
-**Use your preferred IDE**
+Adaptive layouts using Flexbox, Grid, and media queries
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Reusable React components for modularity and maintainability
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Interactive UI with clean styling using Bootstrap
 
-Follow these steps:
+Technologies Used
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+HTML – Structure of the web pages
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+CSS – Styling and layout
 
-# Step 3: Install the necessary dependencies.
-npm i
+JavaScript – Interactive functionality
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Bootstrap – Responsive components and layout helpers
 
-**Edit a file directly in GitHub**
+React – Functional components for modular UI
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+How to Use
 
-**Use GitHub Codespaces**
+Clone or download the repository
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Run the project using a local server (e.g., npm start if using React)
 
-## What technologies are used for this project?
+Navigate through departments, notices, and events sections
 
-This project is built with:
+Resize the browser to see responsive layouts in action
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Project Goal
 
-## How can I deploy this project?
+This project demonstrates:
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Building responsive web applications
 
-## Can I connect a custom domain to my Lovable project?
+Creating modular and reusable React components
 
-Yes, you can!
+Implementing adaptive layouts with Flexbox, Grid, and media queries
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Structuring a frontend project with modern web technologies
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Future Improvements...
+
+Add dynamic data fetching from a backend or API
+
+Include search and filter functionality for departments and events
+
+Add user authentication for admin notice posting

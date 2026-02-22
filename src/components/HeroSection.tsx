@@ -19,9 +19,11 @@ const HeroSection = () => (
             Join Our Community
           </Button>
         </Link>
-        <Button size="lg" variant="outline" className="border-primary-foreground/40 text-primary-foreground hover:bg-primary-foreground/10">
-          Explore Directory
-        </Button>
+        <Link to="/directory">
+          <Button size="lg" variant="outline" className="border-primary-foreground/40 text-primary-foreground hover:bg-primary-foreground/10">
+            Explore Directory
+          </Button>
+        </Link>
       </div>
     </div>
   </section>

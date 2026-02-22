@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 import { Users, Calendar, Briefcase, HandshakeIcon } from "lucide-react";
 
 const features = [
-  { icon: Users, title: "Alumni Directory", desc: "Connect with fellow graduates from around the world" },
-  { icon: Calendar, title: "Events & Reunions", desc: "Join exciting events and reunions in your area" },
-  { icon: Briefcase, title: "Career Opportunities", desc: "Explore job postings and career advancement" },
-  { icon: HandshakeIcon, title: "Mentorship Program", desc: "Find mentors or become one to guide others" },
+  { icon: Users, title: "Alumni Directory", desc: "Connect with fellow graduates from around the world", path: "/directory" },
+  { icon: Calendar, title: "Events & Reunions", desc: "Join exciting events and reunions in your area", path: "/events" },
+  { icon: Briefcase, title: "Career Opportunities", desc: "Explore job postings and career advancement", path: "/jobs" },
+  { icon: HandshakeIcon, title: "Mentorship Program", desc: "Find mentors or become one to guide others", path: "/networking" },
 ];
 
 const FeaturesSection = () => (
@@ -18,9 +19,10 @@ const FeaturesSection = () => (
       </p>
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         {features.map((f) => (
-          <div
+          <Link
             key={f.title}
-            className="bg-card rounded-lg p-6 border border-border hover:shadow-lg transition-shadow group cursor-pointer"
+            to={f.path}
+            className="bg-card rounded-lg p-6 border border-border hover:shadow-lg transition-shadow group block"
           >
             <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
               <f.icon className="w-6 h-6 text-primary" />
@@ -28,7 +30,7 @@ const FeaturesSection = () => (
             <h3 className="font-semibold text-lg mb-2">{f.title}</h3>
             <p className="text-sm text-muted-foreground">{f.desc}</p>
             <p className="text-sm text-primary font-medium mt-3">Learn more →</p>
-          </div>
+          </Link>
         ))}
       </div>
     </div>
